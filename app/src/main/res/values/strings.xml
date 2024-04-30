@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MvvmCleanEcomRestApi</string>
+    <string name="login">Login</string>
+</resources>
