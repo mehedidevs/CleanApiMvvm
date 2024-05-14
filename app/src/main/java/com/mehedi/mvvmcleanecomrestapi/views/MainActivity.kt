@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.mehedi.mvvmcleanecomrestapi.data.model.RequestLogin
 import com.mehedi.mvvmcleanecomrestapi.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,18 +19,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.btnLogin.setOnClickListener {
-            val requestLogin = RequestLogin(
-                email = "john@mail.com",
-                password = "changeme"
-            )
-
-
-            viewmodel.login(requestLogin)
-
-
-        }
 
 
     }

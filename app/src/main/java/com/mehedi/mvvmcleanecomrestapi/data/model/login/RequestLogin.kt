@@ -1,4 +1,4 @@
-package com.mehedi.mvvmcleanecomrestapi.data.model
+package com.mehedi.mvvmcleanecomrestapi.data.model.login
 
 
 import androidx.annotation.Keep

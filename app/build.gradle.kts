@@ -58,13 +58,15 @@ dependencies {
     implementation(libs.retrofit.converter.gson)
     implementation(libs.retrofit.okhttp)
 
+    //coroutines
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
     //dagger hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
 
-    //coroutines
-    implementation(libs.coroutines.core)
-    implementation(libs.coroutines.android)
+
 
     //lifecycle viewmodel
     implementation(libs.android.viewmodel)
