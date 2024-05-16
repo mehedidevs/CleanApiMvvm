@@ -48,9 +48,11 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::i
                 is DataState.Error -> {
                     loading.dismiss()
                 }
+                
                 is DataState.Loading -> {
                     loading.show()
                 }
+                
                 is DataState.Success -> {
                     loading.dismiss()
                     prefsManager.setPrefs(ACCESS_TOKEN, "${response.data?.accessToken}")
@@ -58,6 +60,9 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::i
                     
                     Log.d("TAG", "accessToken: ${prefsManager.getPrefs(ACCESS_TOKEN)}")
                     Log.d("TAG", "refreshToken: ${prefsManager.getPrefs(REFRESH_TOKEN)}")
+                    
+                    findNavController().navigate(R.id.action_loginFragment_to_profileFragment)
+                    
                 }
             }
             

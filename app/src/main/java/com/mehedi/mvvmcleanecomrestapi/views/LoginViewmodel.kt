@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mehedi.mvvmcleanecomrestapi.data.model.login.LoginResponse
 import com.mehedi.mvvmcleanecomrestapi.data.model.login.RequestLogin
-import com.mehedi.mvvmcleanecomrestapi.data.model.login.ResponseLogin
 import com.mehedi.mvvmcleanecomrestapi.data.repo.PlatziRepository
 import com.mehedi.mvvmcleanecomrestapi.utils.DataState
 import dagger.hilt.android.lifecycle.HiltViewModel
