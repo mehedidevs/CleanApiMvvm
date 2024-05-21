@@ -6,6 +6,7 @@ object Constants {
 
     const val LOGIN = "auth/login"
     const val PROFILE = "auth/profile"
+    const val PRODUCTS = "products"
 
 
 }
